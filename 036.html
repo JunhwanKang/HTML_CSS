@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form의 method 속성, enctype 속성</title>
+</head>
+<body>
+    <!-- 인터넷에서 주고 받는 데이터는 기본이 String -->
+    <form action="/join" method="get">
+        <input type="text" name="username" placeholder="get">
+        <button>보내기</button>
+    </form>
+    <!-- get: 서버의 정보 변경이 없다. (read) 재실행 가능, 즐겨찾기 가능 >>> 주소창을 이용해 정보 전송-->
+    <!-- post: 서버의 정보 변경이 있다. 재실행이 불가능, 즐겨찾기 불가능 -->
+    <form action="/join" method="post">
+        <input type="text" name="username" placeholder="post">
+        <button>보내기</button>
+    </form>
+</body>
+</html>

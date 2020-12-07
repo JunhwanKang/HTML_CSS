@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form : 서버로 전송할 영역</title>
+    <script>
+        document.getElementById("userid"); // #userid와 같은 개념
+        document.getElementById("username"); // undefined
+    </script>
+</head>
+<body>
+    <!--
+        http://kbs.co.kr/2020112/9new.avi 
+        실제 파일의 이름이 주소 : URL (해킹이 쉬움 >>> 잘 안씀 >>> URI를 씀)
+
+        http://kbs.co.kr/202011209.do
+        서버주소는 백엔드 프로그램의 이름. 그 프로그램이 실제 파일을 출력 : URI
+     -->
+
+     <!-- input의 역할은 type으로 지정. type의 모양은 브라우저마다 다름 -->
+     <!-- 이름과 값 -->
+     <!-- 프론트에서 사용하는이름 : id , 서버로 넘어가서 사용하는 이름 : name -->
+    <form action="/aaa">
+        <input type="text" name="username" id="userid" placeholder="아이디" maxlength="10"><br>
+        <input type="password" name="password" id="password" placeholder="비밀번호" maxlength="10"><br>
+        <input type="date" name="birthday" id="birthday" placeholder="생년월일"><br>
+        <button>회원 가입</button>
+    </form>
+</body>
+</html>
