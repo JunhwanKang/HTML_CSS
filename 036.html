@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form의 method 속성, enctype 속성</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- 인터넷에서 주고 받는 데이터는 기본이 String -->
-    <form action="/join" method="get">
-        <input type="text" name="username" placeholder="get">
-        <button>보내기</button>
-    </form>
-    <!-- get: 서버의 정보 변경이 없다. (read) 재실행 가능, 즐겨찾기 가능 >>> 주소창을 이용해 정보 전송-->
-    <!-- post: 서버의 정보 변경이 있다. 재실행이 불가능, 즐겨찾기 불가능 -->
-    <form action="/join" method="post">
-        <input type="text" name="username" placeholder="post">
-        <button>보내기</button>
+    <!-- 서버에 보내면 문자열로 인식한다(http). 무조건. 그래서 enctype으로 지정 -->
+    <!-- get읽기 post결제 -->
+    <form action="/join" method="">
+        <input type="text">
+        <input type="submit" value="submit">
+        <input type="reset" value="지우기">
+        <inptut type="button" value="submit안해요"></inptut>
+        <!-- button 태그는 submit 처리가 된다. -->
+        <button>submit하는 버튼</button>
+        <button type="button">submit안하는 버튼</button>
+        <!-- legacy 옛날의 유산, 이전에 이렇게 너무 써서 바꿀 수 없음. 호환성 문제 -->
     </form>
 </body>
 </html>

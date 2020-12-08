@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 input{
+            border: 1px solid red;
+            /* 둘 다 적용 됨 (하위 태그 모두)*/
+        }
+        #div1 > input {
+            background-color: yellow;
+            /* 자식만 적용됨 (직속만)*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <input type="text">
+        <div id="div2">
+            <input type="text">
+        </div>
+    </div>
+</body>
+</html>

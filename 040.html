@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- min 한줄로 쓴 코드 열어보면 줄바꿈이 없이 빽빽히 쓰이는 것. 이걸 갖다 쓰는게 용량이 적으므로 좋다. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        내 프로젝트에 css, js가 들어있으면 사용자가 내 프로젝트에서 받아간다.
+        이런 공개된 부트스트랩 같은 긴 코드는 공용 서버(CDN)에서 받아가게한다.
+        내 서버에서 받아가면 느려지고 요금이 많이나감 sweetalert2 cdn
+     -->
+    <!-- 
+        thead: 제목(head) 없을 수도 있음
+        tbody: 본문
+        tfoot: 마지막(결과, 합계등등) 없을 수도 있음    
+    -->
+    <div id="content">
+        <table class="table table-hover">
+           <colgroup>
+               <col width="5%">
+               <col width="40%">
+               <col width="15%">
+               <col width="15%">
+               <col width="5%">
+           </colgroup>
+           <thead>
+               <tr>
+                   <th>글번호</th>
+                   <th>제목</th>
+                   <th>작성자</th>
+                   <th>작성일</th>
+                   <th>조회수</th>
+                </tr>
+            </thead>
+           <tr>
+               <td>2</td>
+               <td>안녕하세요</td>
+               <td>홍길동</td>
+               <td>2020-11-20</td>
+               <td>15</td>
+           </tr>
+           <tr>
+               <td>1</td>
+               <td>가입인사</td>
+               <td>java</td>
+               <td>2020-11-18</td>
+               <td>7</td>
+           </tr>
+       </table>
+   </div>
+</body>
+</html>
