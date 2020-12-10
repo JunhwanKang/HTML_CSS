@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        div { 
+            border : 1px solid blue;
+            width : 130px;
+            height: 150px;
+            margin: 50px;
+            text-align: center;
+            /* 내용이 한줄일 때 높이와 줄간격 일치 */
+            line-height: 150px;
+            box-sizing: border-box;
+        }
+        #a{padding:15px;}
+        #b{padding:30px;}
+    </style>
+</head>
+<body>
+    <div id="a">우리나라</div>
+    <div id="b">좋은나라</div>
+</body>
+</html>
