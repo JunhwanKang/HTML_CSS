@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #join table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 300px;
+       }
+       
+       #content{
+           width:98%;
+           overflow: scroll;
+       }
+       #jumin input{
+            width: 77px;
+       }
+       .element{
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <!-- 주민번호 앞6 뒤7 -->
+    <form action="/kkk">
+        <div id="join">
+            <table border="1">
+                <colgroup>
+                    
+                </colgroup>
+                <tr>
+                    <td colspan="2" class="element">회원 가입 양식</td>
+                </tr>
+                <tr>
+                    <td class="element">항목</td>
+                    <td class="element">내용</td>
+                </tr>
+                <tr>
+                    <td class="element">아이디</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="element">비밀번호</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr id = "jumin">
+                    <td class="element">주민번호</td>
+                    <td>
+                        <input type="text" maxlength="6">-<input type="text" maxlength="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element">성별</td>
+                    <td>
+                        <input type="radio" name="gender">남
+                        <input type="radio" name="gender">여
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element">취미</td>
+                    <td>
+                        <input type="checkbox">여행 <input type="checkbox">독서 <input type="checkbox">게임<br>
+                        <input type="checkbox">영화감상 <input type="checkbox">산책 <input type="checkbox">음악감상
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element">가고싶은 여행지</td>
+                    <td>
+                        <select>
+                            <option disabled selected>선택하세요.</option>
+                            <option value="kor">한국</option>
+                            <option value="other">외국</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element">메모사항</td>
+                    <td><textarea id="content"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="element">
+                        <button>확인</button>
+                        <button>취소</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>로그인 form</title>
+    <style>
+        #log{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/test" >
+        <i class="fa fa-apple" aria-hidden="true"></i>
+        <div id="log">
+            <table>
+                <!-- html entity(특수문자) &copy; -->
+                <tr>
+                    <td>아이디</td>
+                    <td><input type = "text" name = "username"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type= "password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>로그인</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러개 중의 하나 선택 : radio, select</title>
+</head>
+<body>
+    <!-- 학년 1,2,3,4 중 하나, 남녀 중 하나 -->
+    <!-- value가 서버로 넘어가는 값. 뒤에 있는 1,2,3,4,남,여는 그냥 화면에 표시만 해줌
+        그것을 누른다고 해서 값이 넘어가지 않음, 체크되면 value로 지정된 값이 넘어간다.
+    -->
+    <h1>학년선택</h1>
+    <input type="radio" name="year" value="1">1
+    <input type="radio" name="year" value="2">2
+    <input type="radio" name="year" value="3">3
+    <input type="radio" name="year" value="4">4
+    <h1>성별 선택</h1>
+    <input type="radio" name="gender" value="man">남
+    <input type="radio" name="gender" value="woman">여
+</body>
+</html>
