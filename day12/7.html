@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid blue;
+
+        }
+        #child, #footer{
+            height:100px;
+        }
+        #parent{
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        #child{
+            float:right;
+        }
+        /* #footer{
+            /* 
+                float된 요소 뒤의 블록 요소에서 clear 
+                만약 블록 요소가 없다면 ...
+             */
+            /* clear:both; */
+            /* } */
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            나는 자식입니다.
+        </div>
+    </div>
+    <div id="footer">
+        나는 푸터입니다.
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* 부모랑 같이 움직여야댐 그래서 부모는 상대적 자식은 절대적*/
+        #parent{
+            border: 1px solid red;
+            position: relative;
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+        }   
+        #child{
+            position: absolute;
+            top:140; right:20px;
+        }
+        #child input{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <input type="text">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</body>
+</html>
